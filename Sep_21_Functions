@@ -1,0 +1,48 @@
+#Normal Function
+def greet_student():
+    print("Hello Student!")
+
+if __name__ == '__main__':
+    greet_student()
+
+#Recursive Function (Recalls back to itself)
+def sum(n):
+    if n <= 1:
+        return n
+    else:
+        return n + sum(n - 1)
+
+if __name__ == '__main__':
+    n = 5
+    print(sum(n))
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+if __name__ == '__main__':
+    n = int(input ("Please Enter Number: "))
+    result = (factorial(n))
+    print(f"The factorial of {n} is {result}")
+
+#Multiplication Function
+def rectangle_area(x,y):
+    return x*y
+
+if __name__ == '__main__':
+    z = rectangle_area(8, 3)
+    print("The area is", z)
+
+#Using loop
+def find_larger(x,y):
+    if x > y:
+        return x
+    elif x < y:
+        return y
+    else:
+        return "Both numbers are equal"
+
+if __name__ == '__main__':
+    print(find_larger(input("Please enter number: "),input("Please enter another number: ")))
