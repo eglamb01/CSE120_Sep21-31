@@ -1,0 +1,80 @@
+#Exact conditional loop
+'''
+for i in range(1, 11, 1):
+    print(i)
+'''
+
+#counting up to 10 loop
+'''
+i = 0
+while (i <= 10):
+    print(i)
+    i += 1
+'''
+
+#input loop
+'''
+n = int(input("Please Enter Number: "))
+x = 1
+while (x <= n):
+    print(x)
+    x += 1
+'''
+#Multiplication
+'''
+n = int(input("Please Enter Number: "))
+for i in range(1, 11):
+    print(f"{n} x {i} = {n * i}")
+'''
+#Adding multiple numbers together
+'''
+total = 0
+current = 1
+while current <= 100:
+    total += current
+    current += 1
+    print(total)
+'''
+
+'''
+i = 1
+fact = 1
+while (i < 6):
+    fact = fact * i
+    #Changes as you get a new "fact" : 3 < 6? Yes, so 3 = 3 x 2(new i) = 6. Gets second line of code in output
+    i = i + 1
+    #Incrementing by 1 everytime
+    print("factorial of 5 using while loop is", fact)
+'''
+
+#Loop that will stop completely if it reaches certain input
+'''
+for i in range (1,11):
+    if (i == 7):
+        break
+    print(i)
+'''
+
+
+#will skip what you choose, like an error for example
+#counts to 20 while skipping odds
+'''
+even = 2
+for i in range (1,21):
+    if i != even:
+        continue
+    print(i)
+    even = even + 2
+'''
+
+
+#2D Loop
+'''
+i = 0
+while (i <= 3):       #0 <= 1 TRUE
+    j = 0
+    while (j <= 2):   #O <= 2 TRUE
+        print(i, j)   #prints 0, 0
+        j = j + 1     #0 = 0 + 1 = 1
+    i = i + 1         #0 = 0 + 1 + 1, restarts until i > 1 or j > 2
+'''
