@@ -34,3 +34,11 @@ if __name__ == '__main__':
             n2 = int(input("Please Enter Second Number: "))
             mul = multiplication(n1, n2)
             print(f"{n1} x {n2} =", mul)
+        elif choice == "D":
+            n1 = float(input("Please Enter First Number: "))
+            n2 = float(input("Please Enter Second Number: "))
+            div = division(n1, n2)
+            print(f"{n1} / {n2} =", div)
+        elif choice == "E":
+            print("Exiting Calculator. Goodbye!")
+            break
