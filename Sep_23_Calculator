@@ -24,3 +24,13 @@ if __name__ == '__main__':
             n2 = int(input("Please Enter Second Number: "))
             ad = addition(n1,n2)
             print (f"{n1} + {n2} =", ad)
+        elif choice == "B":
+            n1 = int(input("Please Enter First Number: "))
+            n2 = int(input("Please Enter Second Number: "))
+            sub = subtraction(n1, n2)
+            print(f"{n1} - {n2} =", sub)
+        elif choice == "C":
+            n1 = int(input("Please Enter First Number: "))
+            n2 = int(input("Please Enter Second Number: "))
+            mul = multiplication(n1, n2)
+            print(f"{n1} x {n2} =", mul)
