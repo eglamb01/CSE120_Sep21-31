@@ -15,3 +15,12 @@ def calculator():
         print("C = Multiplication")
         print("D = Division")
         print("E = Exit")
+if __name__ == '__main__':
+    while True:
+        calculator()
+        choice = input("Please Select an Option: ").upper()
+        if choice == "A":
+            n1 = int(input("Please Enter First Number: "))
+            n2 = int(input("Please Enter Second Number: "))
+            ad = addition(n1,n2)
+            print (f"{n1} + {n2} =", ad)
