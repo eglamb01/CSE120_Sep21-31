@@ -1,0 +1,35 @@
+arr2 = [70,20,13,15,25,50,45,34,30,45]
+
+#will split the numbers from the 2nd index to the 4th index
+print(arr2[2:5]) 
+
+#Or, you can print from one point to the very end
+print(arr2[4:])
+
+#Or, you can print until a certain point
+print(arr2[:4])
+
+
+
+#How to sort and then get minimum value
+ arr1 = [53,74,12,23,89,42]
+    arr1.sort()
+    print(arr1[0])
+
+#How to get minimum value with loop
+arr1 = [53,74,12,23,89,42]
+    min = arr1[0]
+    for i in range (len(arr1)):
+        if(arr1[i] < min):
+            min=arr1[i]
+    print(min)
+
+#Matrix 
+matrix = []
+    for i in range(2):
+        row = []
+        for j in range(3):
+            element = int(input("Enter the number "))
+            row.append(element)
+        matrix.append(row)
+        print(matrix)
