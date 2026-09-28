@@ -33,3 +33,8 @@ matrix = []
             row.append(element)
         matrix.append(row)
         print(matrix)
+
+#Palindrome
+numbers = [11, 20, 30, 20, 10]
+palindrome = numbers == numbers[::-1]
+print(palindrome)
