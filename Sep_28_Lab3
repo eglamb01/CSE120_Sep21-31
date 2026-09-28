@@ -1,0 +1,17 @@
+def multiply_list(numbers_list, multiplier):
+    m_list = []
+    for num in numbers_list:
+        m_list.append(num * multiplier)
+    return m_list
+if __name__ == '__main__':
+    list = []
+    count = 1
+    while count <= 13:
+        listvalue = int(input("Please input a number: "))
+        list.append(listvalue)
+        count += 1
+    print(f"Your numbers: {list}")
+    mult = int(input("Please input a multiplier: "))
+    print(f"Multiplying each number by {mult}...")
+    m_list = multiply_list(list, mult)
+    print(f"Your new numbers: {m_list}")
