@@ -1,0 +1,58 @@
+def menu():
+    print("- Student List -")
+    print("1. = Add Student")
+    print("2. = Display All Students")
+    print("3. = Search for a Student")
+    print("4. = Remove a Student")
+    print("5. = Count Total Students")
+    print("6. = Exit")
+def another():
+    while True:
+        Q = input("Do you want to do another operation? (yes/no): ").lower()
+        if Q == "yes":
+            break
+        elif Q == "no":
+            print("Thank You! Goodbye.")
+            exit()
+        else:
+            print("Please enter 'yes' or 'no': ")
+if __name__ == '__main__':
+    students = ["alice", "bob"]
+    while True:
+            menu()
+            choice = input("Please Select an Option 1-6: ")
+            if choice == "1":
+                add = input("Please enter the student you'd like to add: ").lower()
+                count = 1
+                students.append(add)
+                count += 1
+                print(f"Your Students: {students}")
+                another()
+            elif choice == "2":
+                print(f"Your Students: {students}")
+                another()
+            elif choice == "3":
+                find = input("Please enter the student you'd like to find: ").lower()
+                if find in students:
+                    print(f"Student Found: {find}")
+                    another()
+                else:
+                    print("Student Not Found!")
+                    another()
+            elif choice == "4":
+                rem = input("Please enter the student you'd like to remove: ").lower()
+                students.remove(rem)
+                print(f"Your Students: {students}")
+                another()
+            elif choice == "5":
+                count = 0
+                for students in students:
+                    count += 1
+                print(f"Your Student Count: {count}")
+                another()
+            elif choice == "6":
+                print("Exiting Student List. Goodbye!")
+                break
+            else:
+                print("Please enter a valid option (1-6)")
+
